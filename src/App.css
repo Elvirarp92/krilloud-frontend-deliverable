@@ -38,9 +38,13 @@ small {
   height: 44px;
   margin: 16px auto;
   text-decoration: none;
-  border: 1px solid black;
+  box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.3);
   align-items: center;
   justify-content: center;
+}
+
+.button-link:hover {
+  box-shadow: inset 5px 5px 3px 0px rgba(0, 0, 0, 0.3);;
 }
 
 .button-text {
