@@ -52,7 +52,9 @@ function App() {
         </Card>
         <Card>
           <CardContent>
-            <h1 className='head-splash-title'>Picture</h1>
+            <div className='head-splash-bg'>
+              <h1 className='head-splash-title'>Picture</h1>
+            </div>
           </CardContent>
           <CardContent>
             <img src={uiExample} alt='Krilloud interface' />
