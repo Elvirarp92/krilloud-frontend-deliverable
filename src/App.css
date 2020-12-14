@@ -10,6 +10,15 @@ h2 {
   font-weight: 700;
 }
 
+h2 {
+  text-align: center;
+  margin: 8px;
+}
+
+p {
+  margin: 8px;
+}
+
 img {
   width: 100%;
 }
