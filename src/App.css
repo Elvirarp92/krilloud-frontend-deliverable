@@ -5,21 +5,27 @@ body {
   font-weight: 300;
 }
 
-.row {
-  display: flex;
-  justify-content: space-around;
-}
-
-h1 {
-  font-weight: 700;
-}
-
+h1,
 h2 {
   font-weight: 700;
 }
 
 img {
   width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.card-title {
+  text-align: center;
+  padding: 15% 0;
 }
 
 .head-splash-bg {

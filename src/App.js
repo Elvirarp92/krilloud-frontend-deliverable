@@ -16,7 +16,9 @@ function App() {
         </CardContent>
         <Card>
           <CardContent>
-            <h1>Making interactive audio important</h1>
+            <h1 className='card-title'>
+              <span className='uppercase'>Making interactive audio important</span>
+            </h1>
           </CardContent>
           <CardContent>
             <h2>About</h2>
@@ -34,7 +36,9 @@ function App() {
       <div className='row'>
         <Card>
           <CardContent>
-            <h1>What is Krilloud and what it does</h1>
+            <h1 className='card-title'>
+              What is <span className='uppercase'>Krilloud</span> and what it does
+            </h1>
           </CardContent>
           <CardContent>
             <h2>Info</h2>
