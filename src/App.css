@@ -12,18 +12,6 @@ img {
   width: 100%;
 }
 
-.head-splash {
-  display: block;
-  height: 100%;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  background-image: url(./images/head.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .head-splash-title {
   position: relative;
   top: 40px;

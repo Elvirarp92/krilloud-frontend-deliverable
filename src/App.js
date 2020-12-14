@@ -1,23 +1,24 @@
-import { Card } from './components/Card/Card'
+import { Card, CardContent } from './components/Card/Card'
 import logo from './images/logo.png'
 import uiExample from './images/interface-placeholder.png'
 import './normalize.css'
 import './App.css'
-import './components/Card/Card.css'
 
 function App() {
   return (
     <main>
       <div className='row'>
-        <article className='card'>
+        <CardContent>
           <img src={logo} alt='Krilloud logo' />
           <a href='http://example.org' className='button-link'>
             Download for Windows
           </a>
-        </article>
+        </CardContent>
         <Card>
-          <h1>Making interactive audio important</h1>
-          <article>
+          <CardContent>
+            <h1>Making interactive audio important</h1>
+          </CardContent>
+          <CardContent>
             <h2>About</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut faucibus odio.
@@ -27,13 +28,15 @@ function App() {
               fermentum non orci non rhoncus. Aenean ornare congue leo, consectetur tristique nulla
               volutpat ut. Morbi nibh sapien, commodo non nunc laoreet, blandit varius velit.
             </p>
-          </article>
+          </CardContent>
         </Card>
       </div>
       <div className='row'>
         <Card>
-          <h1>What is Krilloud and what it does</h1>
-          <article>
+          <CardContent>
+            <h1>What is Krilloud and what it does</h1>
+          </CardContent>
+          <CardContent>
             <h2>Info</h2>
             <p>
               Ut pellentesque enim a posuere posuere. Cras ullamcorper posuere diam at dictum. Sed
@@ -45,13 +48,15 @@ function App() {
             <a href='http://example.org' className='button-link'>
               Watch Tutorial
             </a>
-          </article>
+          </CardContent>
         </Card>
         <Card>
-          <article className='head-splash'>
+          <CardContent>
             <h1 className='head-splash-title'>Picture</h1>
-          </article>
-          <img src={uiExample} alt='Krilloud interface' />
+          </CardContent>
+          <CardContent>
+            <img src={uiExample} alt='Krilloud interface' />
+          </CardContent>
         </Card>
       </div>
     </main>

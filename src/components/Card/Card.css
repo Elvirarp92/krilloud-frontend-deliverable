@@ -4,7 +4,7 @@
   width: 500px;
 }
 
-.card.is-active {
+.is-active {
   animation: flip 2s linear;
 }
 

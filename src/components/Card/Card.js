@@ -8,11 +8,19 @@ const Card = (props) => {
     <div
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
-      className={`card ${isFlipped ? 'is-active' : ''}`}>
+      className={`${isFlipped ? 'is-active' : ''}`}>
       {!isFlipped && props.children[0]}
       {isFlipped && props.children[1]}
     </div>
   )
 }
 
-export { Card }
+const CardContent = (props) => {
+  return (
+    <article className='card'>
+      {props.children}
+    </article>
+  )
+}
+
+export { Card, CardContent }
