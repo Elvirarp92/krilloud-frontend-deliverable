@@ -1,7 +1,15 @@
+import { Card } from './components/Card/Card'
 import './normalize.css'
 
 function App() {
-  return <h1>This Is A Placeholder</h1>
+  return (
+    <main>
+      <Card>
+        <p>Not flipped</p>
+        <p>Flipped</p>
+      </Card>
+    </main>
+  )
 }
 
 export default App
