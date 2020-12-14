@@ -1,5 +1,6 @@
 import { Card, CardContent } from './components/Card/Card'
 import logo from './images/logo.png'
+import { ReactComponent as WindowsLogo } from './icons/windows-logo.svg'
 import uiExample from './images/interface-placeholder.png'
 import './normalize.css'
 import './App.css'
@@ -11,7 +12,8 @@ function App() {
         <CardContent>
           <img src={logo} alt='Krilloud logo' />
           <a href='http://example.org' className='button-link'>
-            Download for Windows
+            <WindowsLogo className='button-icon' />
+            <p className='button-text text-align-right'>Download for Windows</p>
           </a>
         </CardContent>
         <Card>
@@ -50,7 +52,7 @@ function App() {
               turpis, sit amet consequat orci lobortis sit amet.
             </p>
             <a href='http://example.org' className='button-link'>
-              Watch Tutorial
+              <p className='button-text'>Watch Tutorial</p>
             </a>
           </CardContent>
         </Card>
@@ -65,6 +67,16 @@ function App() {
           </CardContent>
         </Card>
       </div>
+      <small>
+        Icons made by{' '}
+        <a href='https://www.flaticon.com/authors/freepik' title='Freepik'>
+          Freepik
+        </a>{' '}
+        from{' '}
+        <a href='https://www.flaticon.com/' title='Flaticon'>
+          www.flaticon.com
+        </a>
+      </small>
     </main>
   )
 }
