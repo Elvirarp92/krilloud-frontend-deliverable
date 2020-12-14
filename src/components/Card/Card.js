@@ -8,7 +8,7 @@ const Card = (props) => {
     <div
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
-      class={`card ${isFlipped ? 'isActive' : ''}`}>
+      className={`card ${isFlipped ? 'is-active' : ''}`}>
       {!isFlipped && props.children[0]}
       {isFlipped && props.children[1]}
     </div>
