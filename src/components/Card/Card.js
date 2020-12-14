@@ -8,7 +8,7 @@ const Card = (props) => {
     <div
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
-      className={`${isFlipped ? 'is-active' : ''}`}>
+      className={`${isFlipped ? 'is-active' : ''} card-container`}>
       {!isFlipped && props.children[0]}
       {isFlipped && props.children[1]}
     </div>
@@ -17,7 +17,7 @@ const Card = (props) => {
 
 const CardContent = (props) => {
   return (
-    <article className='card'>
+    <article className='card-content'>
       {props.children}
     </article>
   )

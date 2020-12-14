@@ -1,7 +1,17 @@
-.card {
-  border: 1px solid black;
+.card-container {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.card-content {
+  margin: 16px;
   height: 300px;
   width: 500px;
+  max-height: 300px;
+  max-width: 500px;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .is-active {
