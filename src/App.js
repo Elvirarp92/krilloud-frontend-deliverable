@@ -11,7 +11,7 @@ function App() {
       <div className='row'>
         <CardContent>
           <img src={logo} alt='Krilloud logo' />
-          <a href='http://example.org' className='button-link'>
+          <a href='https://krilloud.com/download.html' className='button-link'>
             <WindowsLogo className='button-icon' />
             <p className='button-text text-align-right'>Download for Windows</p>
           </a>
@@ -51,7 +51,7 @@ function App() {
               Aenean gravida tincidunt ante, at aliquet leo sagittis non. Maecenas dignissim magna
               turpis, sit amet consequat orci lobortis sit amet.
             </p>
-            <a href='http://example.org' className='button-link'>
+            <a href='https://www.youtube.com/playlist?list=PLOK7ctnMYUhmLojLnIQw0KlzDD1cLw8WB' className='button-link'>
               <p className='button-text'>Watch Tutorial</p>
             </a>
           </CardContent>
