@@ -9,7 +9,7 @@ function App() {
   return (
     <main>
       <div className='row'>
-        <CardFixed>
+        <CardFixed className='card-bg'>
           <img src={logo} alt='Krilloud logo' />
           <a href='https://krilloud.com/download.html' className='button-link'>
             <WindowsLogo className='button-icon' />
@@ -17,7 +17,7 @@ function App() {
           </a>
         </CardFixed>
         <Card>
-          <div>
+          <div className='card-bg'>
             <h1 className='card-title'>
               <span className='uppercase'>Making interactive audio important</span>
             </h1>
@@ -37,7 +37,7 @@ function App() {
       </div>
       <div className='row'>
         <Card>
-          <div>
+          <div className='card-bg'>
             <h1 className='card-title'>
               What is <span className='uppercase'>Krilloud</span> and what it does
             </h1>
@@ -63,7 +63,7 @@ function App() {
             <h1 className='head-splash-title'>Picture</h1>
           </div>
 
-          <div>
+          <div className='card-bg'>
             <img src={uiExample} alt='Krilloud interface' />
           </div>
         </Card>
