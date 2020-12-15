@@ -76,7 +76,7 @@ small {
 
 .head-splash-bg {
   background-image: url('./images/head.jpg');
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;

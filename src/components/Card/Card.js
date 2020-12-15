@@ -5,22 +5,28 @@ const Card = (props) => {
   const [isFlipped, setIsFlipped] = useState(false)
 
   return (
-    <div
-      onMouseEnter={() => setIsFlipped(true)}
-      onMouseLeave={() => setIsFlipped(false)}
-      className={`${isFlipped ? 'is-active' : ''} card-container`}>
-      {!isFlipped && props.children[0]}
-      {isFlipped && props.children[1]}
+    <div className='card-container'>
+      <div
+        className={`card-content ${isFlipped ? 'is-flipped' : ''}`}
+        onMouseEnter={() => setIsFlipped(true)}
+        onMouseLeave={() => setIsFlipped(false)}>
+        <article className={`card-face card-front`}>{props.children[0]}</article>
+        <article className={`card-face card-back ${isFlipped ? 'display' : ''}`}>
+          {props.children[1]}
+        </article>
+      </div>
     </div>
   )
 }
 
-const CardContent = (props) => {
+const CardFixed = (props) => {
   return (
-    <article className='card-content'>
-      {props.children}
-    </article>
+    <div className='card-container'>
+      <div className='card-content'>
+        <article className='card-face'>{props.children}</article>
+      </div>
+    </div>
   )
 }
 
-export { Card, CardContent }
+export { Card, CardFixed }

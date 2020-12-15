@@ -1,4 +1,4 @@
-import { Card, CardContent } from './components/Card/Card'
+import { Card, CardFixed } from './components/Card/Card'
 import logo from './images/logo.png'
 import { ReactComponent as WindowsLogo } from './icons/windows-logo.svg'
 import uiExample from './images/interface-placeholder.png'
@@ -9,20 +9,20 @@ function App() {
   return (
     <main>
       <div className='row'>
-        <CardContent>
+        <CardFixed>
           <img src={logo} alt='Krilloud logo' />
           <a href='https://krilloud.com/download.html' className='button-link'>
             <WindowsLogo className='button-icon' />
             <p className='button-text text-align-right'>Download for Windows</p>
           </a>
-        </CardContent>
+        </CardFixed>
         <Card>
-          <CardContent>
+          <div>
             <h1 className='card-title'>
               <span className='uppercase'>Making interactive audio important</span>
             </h1>
-          </CardContent>
-          <CardContent>
+          </div>
+          <div>
             <h2>About</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut faucibus odio.
@@ -32,17 +32,17 @@ function App() {
               fermentum non orci non rhoncus. Aenean ornare congue leo, consectetur tristique nulla
               volutpat ut. Morbi nibh sapien, commodo non nunc laoreet, blandit varius velit.
             </p>
-          </CardContent>
+          </div>
         </Card>
       </div>
       <div className='row'>
         <Card>
-          <CardContent>
+          <div>
             <h1 className='card-title'>
               What is <span className='uppercase'>Krilloud</span> and what it does
             </h1>
-          </CardContent>
-          <CardContent>
+          </div>
+          <div>
             <h2>Info</h2>
             <p>
               Ut pellentesque enim a posuere posuere. Cras ullamcorper posuere diam at dictum. Sed
@@ -51,20 +51,21 @@ function App() {
               Aenean gravida tincidunt ante, at aliquet leo sagittis non. Maecenas dignissim magna
               turpis, sit amet consequat orci lobortis sit amet.
             </p>
-            <a href='https://www.youtube.com/playlist?list=PLOK7ctnMYUhmLojLnIQw0KlzDD1cLw8WB' className='button-link'>
+            <a
+              href='https://www.youtube.com/playlist?list=PLOK7ctnMYUhmLojLnIQw0KlzDD1cLw8WB'
+              className='button-link'>
               <p className='button-text'>Watch Tutorial</p>
             </a>
-          </CardContent>
+          </div>
         </Card>
         <Card>
-          <CardContent>
-            <div className='head-splash-bg'>
-              <h1 className='head-splash-title'>Picture</h1>
-            </div>
-          </CardContent>
-          <CardContent>
+          <div className='head-splash-bg'>
+            <h1 className='head-splash-title'>Picture</h1>
+          </div>
+
+          <div>
             <img src={uiExample} alt='Krilloud interface' />
-          </CardContent>
+          </div>
         </Card>
       </div>
       <small>
