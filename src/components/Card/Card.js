@@ -8,12 +8,14 @@ const Card = (props) => {
     <div className='card-container'>
       <div
         className={`card-content ${isFlipped ? 'is-flipped' : ''}`}
-        onMouseEnter={() => setIsFlipped(true)}
-        onMouseLeave={() => setIsFlipped(false)}>
+        onMouseEnter={() => {
+          setIsFlipped(true)
+        }}
+        onMouseLeave={() => {
+          setIsFlipped(false)
+        }}>
         <article className={`card-face card-front`}>{props.children[0]}</article>
-        <article className={`card-face card-back ${isFlipped ? 'display' : ''}`}>
-          {props.children[1]}
-        </article>
+        <article className={`card-face card-back`}>{props.children[1]}</article>
       </div>
     </div>
   )
